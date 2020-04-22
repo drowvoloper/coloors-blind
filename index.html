@@ -8,19 +8,16 @@
 <body>
 	<header class="header">
 		<h1 class="logo">Coloors project</h1>
-		<p class="info">info</p>
+		<p class="info"><i class="fas fa-info-circle"></i></p>
 	</header>
 	<main class="colors">
 		<article class="color">
 			<p class="color__code">#hexcode</p>
-			<div class="color--protanopia"></div>
-			<div class="color--deuteranopia"></div>
-			<div class="color--tritanopia"></div>
 			<div class="color__options">
 				<button class="color__lock"><i class="fas fa-lock-open"></i></button>
 				<button class="color__adjustment"><i class="fas fa-sliders-h"></i></button>
 				<div class="panel">
-					<button class="panel__close">X<button>
+					<button class="panel__close"><i class="fas fa-times-circle"></i></button>
 					<div class="sliders">
 						<span>Hue</span>
 						<input type="range" min="0" max="360" step="1" name="hue" class="sliders--hue" data-hue="0">
@@ -31,17 +28,17 @@
 					</div>
 				</div>
 			</div>
-		</article>
-		<article class="color">
-			<p class="color__code">#hexcode</p>
 			<div class="color--protanopia"></div>
 			<div class="color--deuteranopia"></div>
 			<div class="color--tritanopia"></div>
+		</article>
+		<article class="color">
+			<p class="color__code">#hexcode</p>
 			<div class="color__options">
 				<button class="color__lock"><i class="fas fa-lock-open"></i></button>
 				<button class="color__adjustment"><i class="fas fa-sliders-h"></i></button>
 				<div class="panel">
-					<button class="panel__close">X<button>
+					<button class="panel__close"><i class="fas fa-times-circle"></i></button>
 					<div class="sliders">
 						<span>Hue</span>
 						<input type="range" min="0" max="360" step="1" name="hue" class="sliders--hue" data-hue="1">
@@ -52,17 +49,17 @@
 					</div>
 				</div>
 			</div>
-		</article>
-		<article class="color">
-			<p class="color__code">#hexcode</p>
 			<div class="color--protanopia"></div>
 			<div class="color--deuteranopia"></div>
 			<div class="color--tritanopia"></div>
+		</article>
+		<article class="color">
+			<p class="color__code">#hexcode</p>
 			<div class="color__options">
 				<button class="color__lock"><i class="fas fa-lock-open"></i></button>
 				<button class="color__adjustment"><i class="fas fa-sliders-h"></i></button>
 				<div class="panel">
-					<button class="panel__close">X<button>
+					<button class="panel__close"><i class="fas fa-times-circle"></i></button>
 					<div class="sliders">
 						<span>Hue</span>
 						<input type="range" min="0" max="360" step="1" name="hue" class="sliders--hue" data-hue="2">
@@ -73,17 +70,17 @@
 					</div>
 				</div>
 			</div>
-		</article>
-		<article class="color">
-			<p class="color__code">#hexcode</p>
 			<div class="color--protanopia"></div>
 			<div class="color--deuteranopia"></div>
 			<div class="color--tritanopia"></div>
+		</article>
+		<article class="color">
+			<p class="color__code">#hexcode</p>
 			<div class="color__options">
 				<button class="color__lock"><i class="fas fa-lock-open"></i></button>
 				<button class="color__adjustment"><i class="fas fa-sliders-h"></i></button>
 				<div class="panel">
-					<button class="panel__close">X<button>
+					<button class="panel__close"><i class="fas fa-times-circle"></i></button>
 					<div class="sliders">
 						<span>Hue</span>
 						<input type="range" min="0" max="360" step="1" name="hue" class="sliders--hue" data-hue="3">
@@ -94,17 +91,17 @@
 					</div>
 				</div>
 			</div>
-		</article>
-		<article class="color">
-			<p class="color__code">#hexcode</p>
 			<div class="color--protanopia"></div>
 			<div class="color--deuteranopia"></div>
 			<div class="color--tritanopia"></div>
+		</article>
+		<article class="color">
+			<p class="color__code">#hexcode</p>
 			<div class="color__options">
 				<button class="color__lock"><i class="fas fa-lock-open"></i></button>
 				<button class="color__adjustment"><i class="fas fa-sliders-h"></i></button>
 				<div class="panel">
-					<button class="panel__close">X<button>
+					<button class="panel__close"><i class="fas fa-times-circle"></i></button>
 					<div class="sliders">
 						<span>Hue</span>
 						<input type="range" min="0" max="360" step="1" name="hue" class="sliders--hue" data-hue="4">
@@ -115,20 +112,23 @@
 					</div>
 				</div>
 			</div>
+			<div class="color--protanopia"></div>
+			<div class="color--deuteranopia"></div>
+			<div class="color--tritanopia"></div>
 		</article>
-		<nav>
-			<button class="library__btn">library</button>
+		<nav class="navigation">
+			<button class="library__btn"><i class="fas fa-book-open"></i>library</button>
 			<div class="library">
 				<div class="library__modal">
-					<button class="library__close">X</button>
+					<button class="library__close"><i class="fas fa-times-circle"></i></button>
 					<h4>Pick your palette</h4>
 				</div>
 			</div>
-			<button class="generate__btn">generate</button>
-			<button class="save__btn">save</button>
+			<button class="generate__btn"><i class="fas fa-sync"></i>generate</button>
+			<button class="save__btn"><i class="fas fa-save"></i>save</button>
 			<div class="save">
 				<div class="save__modal">
-					<button class="save__close">X</button>
+					<button class="save__close"><i class="fas fa-times-circle"></i></button>
 					<h4>Give a name to your palette</h4>
 					<input type="text" max-length="35" class="save__name">
 					<button type="submit" class="save__submit">Save</button>
@@ -146,6 +146,6 @@
     integrity="sha256-gX8uuyxN8stSMHWO9arnnKyenTOALaVAcVB3b6P87e4="
     crossorigin="anonymous"
   ></script>
-  <script src="./app.js"></script>
+  <script src="./bundle.js"></script>
 </body>
 </html>

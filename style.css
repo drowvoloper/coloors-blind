@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+i,
+.fas {
+	pointer-events: none;
+}
+
+/* HEADER */
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 1em;
+	line-height: 3.4rem;
+	background-color: #19556f;
+	color: #f3f3f3;
+}
+.logo {
+	text-transform: uppercase;
+	font-family: monospace;
+	font-weight: lighter;	
+	font-size: 1.6rem;
+}
+.info {
+	font-size: 1.4rem;
+	cursor: pointer;	
+}
+
+/* MAIN */
+.colors {
+	display: flex;
+	flex-direction: column;
+}
+
+.color {
+	display: flex;
+	justify-content: flex-end;
+	line-height: 4rem;
+}
+.color__code {
+	flex-grow: 2;
+}
+
+.color--protanopia,
+.color--deuteranopia,
+.color--tritanopia {
+	width: 10%;
+}
+.color--protanopia {}
+.color--deuteranopia {}
+.color--tritanopia {}
+.color__options {
+	position: relative;
+}
+.color__lock,
+.color__adjustment {
+	background: none;
+	border: none;
+	padding: 1em;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+.panel {
+	position: absolute;
+	top: 0;
+	left: 1000%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: #f3f3f3;
+	border-radius: 10px;
+	z-index: 2;
+	box-shadow: 0 0 5px gray;
+}
+
+.panel__close,
+.library__close,
+.save__close {
+	font-size: 1.3rem;
+	width: 2rem;
+	position: absolute;
+	right: .1em;
+	top: .5em;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;		
+}
+.sliders {
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+}
+
+.sliders span {}
+.sliders--hue {}
+.sliders--bright {}
+.sliders--sat {}
+
+/* NAV */
+.navigation {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 2em;
+}
+.library__btn,
+.save__btn,
+.generate__btn {
+	padding: .5em;
+	cursor: pointer;
+}
+
+.library__btn .fa-book-open,
+.save__btn .fa-save,
+.generate__btn .fa-sync {
+	margin-right: .8em;
+}
+
+.library__btn {}
+
+.library,
+.save {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	background-color: rgba(0, 0, 0, .6);
+}
+
+.library.active,
+.save.active {
+	display: flex;
+}
+
+.library__modal,
+.save__modal {
+	position: relative;
+	background-color: #f3f3f3;
+	padding: 2em;	
+	border-radius: 10px;
+}
+
+.generate__btn {}
+.save__btn {}
+.save {}
+.save__modal {}
+.save__close {}
+.save__name {}
+.save__submit {}
+
