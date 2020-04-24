@@ -7,92 +7,117 @@
 i,
 .fas {
 	pointer-events: none;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 /* HEADER */
 .header {
 	display: flex;
-	justify-content: space-between;
-	padding: 0 1em;
-	line-height: 3.4rem;
-	background-color: #19556f;
-	color: #f3f3f3;
+	line-height: 3.2rem;
+	padding: 0 1.3em;		
 }
 .logo {
 	text-transform: uppercase;
 	font-family: monospace;
-	font-weight: lighter;	
-	font-size: 1.6rem;
+	color: gray;
+	font-weight: lighter;
 }
+
+.navigation {
+	flex-grow: 1;
+	text-align: right;
+	display: flex;
+	margin-left: auto;
+	max-width: 500px;	
+}
+
+@media (max-width: 40rem) {
+	.header {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.navigation {
+		width: 100%;
+	}
+}
+
+.navigation a {
+	flex-grow: 1;
+	text-align: center;
+	color: gray;
+}
+
+.navigation a:hover {
+	background-color: gray;
+	color: white;
+}
+
 .info {
-	font-size: 1.4rem;
-	cursor: pointer;	
+	appearance: none;
+	-webkit-appearance: none;
+	border: none;
+	background: none;
+	font-size: 1.5rem;
+	color: gray;
+	margin: 0 .5em;
+}
+
+.info:hover {
+	opacity: .8;
+	cursor: pointer;
 }
 
 /* MAIN */
 .colors {
+	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
 }
 
 .color {
-	display: flex;
-	justify-content: flex-end;
-	line-height: 4rem;
+	flex-grow: 1;
 }
+
+@media (min-width: 40rem) {
+	
+}
+
 .color__code {
-	flex-grow: 2;
 }
 
 .color--protanopia,
 .color--deuteranopia,
 .color--tritanopia {
-	width: 10%;
 }
 .color--protanopia {}
 .color--deuteranopia {}
 .color--tritanopia {}
 .color__options {
-	position: relative;
 }
 .color__lock,
 .color__adjustment {
-	background: none;
-	border: none;
-	padding: 1em;
-	font-size: 1.2rem;
-	cursor: pointer;
 }
 
 .panel {
-	position: absolute;
-	top: 0;
-	left: 1000%;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	background-color: #f3f3f3;
-	border-radius: 10px;
-	z-index: 2;
-	box-shadow: 0 0 5px gray;
+display: none;
 }
 
 .panel__close,
 .library__close,
 .save__close {
-	font-size: 1.3rem;
-	width: 2rem;
-	position: absolute;
-	right: .1em;
-	top: .5em;
-	border: none;
-	border-radius: 50%;
-	cursor: pointer;		
 }
 .sliders {
-	display: flex;
-	flex-direction: column;
-	padding: 1em;
 }
 
 .sliders span {}
@@ -101,16 +126,15 @@ i,
 .sliders--sat {}
 
 /* NAV */
-.navigation {
+/*.navigation {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	padding: 2em;
 }
 .library__btn,
 .save__btn,
 .generate__btn {
+	flex-grow: 1;
 	padding: .5em;
 	cursor: pointer;
 }
@@ -157,4 +181,4 @@ i,
 .save__close {}
 .save__name {}
 .save__submit {}
-
+*/
