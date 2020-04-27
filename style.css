@@ -211,11 +211,12 @@ body {
 /* INFO */
 
 .panel__modal--info {
-  width: 80%;
-  max-width: 350px;
-	padding: 2em 3em;
-	overflow-y: scroll;
-	top: 1em;
+	width: 80%;
+	max-width: 350px;
+  position: absolute;
+  top: 1em;
+  max-height: 90%;
+  overflow-y: scroll;
 }
 
 .panel__modal--info p {
