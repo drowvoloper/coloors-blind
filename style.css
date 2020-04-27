@@ -161,9 +161,10 @@ body {
 .panel__modal--adjustment,
 .panel__modal--info {
   background-color: #f3f3f3;
-  padding: 3em;
+  padding: 2em 1em;
   border-radius: 5px;
   position: relative;
+	max-width: 90%;
 }
 
 .panel__close {
@@ -203,6 +204,7 @@ body {
 }
 
 /* INFO */
+
 .panel__modal--info {
   max-width: 500px;
 }
@@ -222,8 +224,11 @@ body {
 }
 
 /* LIBRARY */
-.panel__modal--library > p {
-  margin-bottom: 1.4rem;
+.panel__modal--library {
+	position: absolute;
+	top: 1em;
+	max-height: 90%;
+	overflow-y: scroll;
 }
 
 .palettes-list {
