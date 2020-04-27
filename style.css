@@ -182,11 +182,18 @@ body {
 }
 
 /* ADJUSTMENTS */
+.panel--adjustment {
+}
+
+.panel__modal--adjustment {
+	width: 80%;
+	max-width: 350px;	
+}
 
 .original-example {
   width: 100%;
   height: 3rem;
-  margin-bottom: 1em;
+  margin: 1em 0;
 }
 
 .sliders {
