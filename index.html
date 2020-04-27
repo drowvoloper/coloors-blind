@@ -17,13 +17,17 @@
 	</header>
 	<main class="colors">
 		<article class="color">
-			<p class="color__code">#hexcode</p>
+			<div class="color--original">
+				<p class="color__code"></p>
+			</div>
 			<div class="color__options">
 				<button class="color__lock"><i class="fas fa-lock-open"></i></button>
 				<button class="color__adjustment"><i class="fas fa-sliders-h"></i></button>
-				<div class="panel">
+				<div class="panel panel--adjustment">
+					<div class="panel__modal--adjustment">
 					<button class="panel__close"><i class="fas fa-times-circle"></i></button>
 					<div class="sliders">
+						<span class="original-example"></span>
 						<span>Hue</span>
 						<input type="range" min="0" max="360" step="1" name="hue" class="sliders--hue" data-hue="0">
 						<span>Brightness</span>
@@ -31,27 +35,36 @@
 						<span>Saturation</span>
 						<input type="range" min="0" max="1" step="0.01" name="saturation" class="sliders--sat" data-sat="0">
 					</div>
+					<button class="change-btn">Change</button>
+</div>
 				</div>
 			</div>
+				</div>
 			<div class="color--protanopia"></div>
 			<div class="color--deuteranopia"></div>
 			<div class="color--tritanopia"></div>
 		</article>
 		<article class="color">
-			<p class="color__code">#hexcode</p>
+			<div class="color--original">
+				<p class="color__code"></p>
+			</div>
 			<div class="color__options">
 				<button class="color__lock"><i class="fas fa-lock-open"></i></button>
 				<button class="color__adjustment"><i class="fas fa-sliders-h"></i></button>
-				<div class="panel">
+				<div class="panel panel--adjustment">
+					<div class="panel__modal--adjustment">
 					<button class="panel__close"><i class="fas fa-times-circle"></i></button>
 					<div class="sliders">
+						<span class="original-example"></span>
 						<span>Hue</span>
 						<input type="range" min="0" max="360" step="1" name="hue" class="sliders--hue" data-hue="1">
 						<span>Brightness</span>
 						<input type="range" min="0" max="1" step="0.01" name="brightness" class="sliders--bright" data-bright="1">
 						<span>Saturation</span>
 						<input type="range" min="0" max="1" step="0.01" name="saturation" class="sliders--sat" data-sat="1">
+					<button class="change-btn">Change</button>
 					</div>
+				</div>
 				</div>
 			</div>
 			<div class="color--protanopia"></div>
@@ -59,20 +72,26 @@
 			<div class="color--tritanopia"></div>
 		</article>
 		<article class="color">
-			<p class="color__code">#hexcode</p>
+			<div class="color--original">
+				<p class="color__code"></p>
+			</div>
 			<div class="color__options">
 				<button class="color__lock"><i class="fas fa-lock-open"></i></button>
 				<button class="color__adjustment"><i class="fas fa-sliders-h"></i></button>
-				<div class="panel">
+				<div class="panel panel--adjustment">
+					<div class="panel__modal--adjustment">
 					<button class="panel__close"><i class="fas fa-times-circle"></i></button>
 					<div class="sliders">
+						<span class="original-example"></span>
 						<span>Hue</span>
 						<input type="range" min="0" max="360" step="1" name="hue" class="sliders--hue" data-hue="2">
 						<span>Brightness</span>
 						<input type="range" min="0" max="1" step="0.01" name="brightness" class="sliders--bright" data-bright="2">
 						<span>Saturation</span>
 						<input type="range" min="0" max="1" step="0.01" name="saturation" class="sliders--sat" data-sat="2">
+					<button class="change-btn">Change</button>
 					</div>
+				</div>
 				</div>
 			</div>
 			<div class="color--protanopia"></div>
@@ -80,20 +99,26 @@
 			<div class="color--tritanopia"></div>
 		</article>
 		<article class="color">
-			<p class="color__code">#hexcode</p>
+			<div class="color--original">
+				<p class="color__code"></p>
+			</div>
 			<div class="color__options">
 				<button class="color__lock"><i class="fas fa-lock-open"></i></button>
 				<button class="color__adjustment"><i class="fas fa-sliders-h"></i></button>
-				<div class="panel">
+				<div class="panel panel--adjustment">
+					<div class="panel__modal--adjustment">
 					<button class="panel__close"><i class="fas fa-times-circle"></i></button>
 					<div class="sliders">
+						<span class="original-example"></span>
 						<span>Hue</span>
 						<input type="range" min="0" max="360" step="1" name="hue" class="sliders--hue" data-hue="3">
 						<span>Brightness</span>
 						<input type="range" min="0" max="1" step="0.01" name="brightness" class="sliders--bright" data-bright="3">
 						<span>Saturation</span>
 						<input type="range" min="0" max="1" step="0.01" name="saturation" class="sliders--sat" data-sat="3">
+					<button class="change-btn">Change</button>
 					</div>
+				</div>
 				</div>
 			</div>
 			<div class="color--protanopia"></div>
@@ -101,46 +126,68 @@
 			<div class="color--tritanopia"></div>
 		</article>
 		<article class="color">
-			<p class="color__code">#hexcode</p>
+			<div class="color--original">
+				<p class="color__code"></p>
+			</div>
 			<div class="color__options">
 				<button class="color__lock"><i class="fas fa-lock-open"></i></button>
 				<button class="color__adjustment"><i class="fas fa-sliders-h"></i></button>
-				<div class="panel">
+				<div class="panel panel--adjustment">
+					<div class="panel__modal--adjustment">
 					<button class="panel__close"><i class="fas fa-times-circle"></i></button>
 					<div class="sliders">
+						<span class="original-example"></span>
 						<span>Hue</span>
 						<input type="range" min="0" max="360" step="1" name="hue" class="sliders--hue" data-hue="4">
 						<span>Brightness</span>
 						<input type="range" min="0" max="1" step="0.01" name="brightness" class="sliders--bright" data-bright="4">
 						<span>Saturation</span>
 						<input type="range" min="0" max="1" step="0.01" name="saturation" class="sliders--sat" data-sat="4">
+					<button class="change-btn">Change</button>
 					</div>
+				</div>
 				</div>
 			</div>
 			<div class="color--protanopia"></div>
 			<div class="color--deuteranopia"></div>
 			<div class="color--tritanopia"></div>
 		</article>
+		<section class="nav-panels">
+    	<article class="panel panel--library">
+      	<div class="panel__modal panel__modal--library">
+        	<button class="panel__close">
+          	<i class="fas fa-times-circle"></i>
+        	</button>
+        	<p>Stored palettes</p>
+					<div class="palettes-list">
+					</div>
+      	</div>
+    	</article>
+    	<article class="panel panel--save">
+				<div class="panel__modal panel__modal--save">
+					<button class="panel__close">
+						<i class="fas fa-times-circle"></i>
+					</button>
+					<p>Save your palette</p>
+					<span class="alert"></span>
+					<input type="text" maxlength="30">
+					<button class="save__btn">+ Add</button>
+				</div>
+			</article>
+			<article class="panel panel--info">
+				<div class="panel__modal panel__modal--info">
+					<button class="panel__close">
+						<i class="fas fa-times-circle"></i>
+					</button>
+					<p>  This project is inspired by the Coloors project included in <a href="https://developedbyed.com/p/the-creative-javascript-course" target="_blank" class="project-description__link">"The Creative Javascript Course"</a> by <a href="https://twitter.com/developedbyed" target="_blank" class="project-description__link">@developedbyed</a></p>
+					<p>I wanted to add something different and show not just the original colors but also how they would be seen by color-blind people (specifically, protanopia, deuteranopia and tritanopia types). These colors are generated using the <a href="https://github.com/skratchdot/color-blind
+" target="_blank">"color-blind" module</a> by <a href="https://github.com/skratchdot" target="_blank">@skratchdot</a>.</p>
+
+					<p>If you want to learn more about accessible charts, you can read <a href="https://venngage.com/blog/color-blind-friendly-palette/" target="_blank">"How to Use Color Blind Friendly Palettes to Make Your Charts Accessible"</a>. 
+				</div>
+			</article>
+  	</section>
 	</main>
-		<!--<nav class="navigation">
-			<button class="library__btn"><i class="fas fa-book-open"></i>library</button>
-			<div class="library">
-				<div class="library__modal">
-					<button class="library__close"><i class="fas fa-times-circle"></i></button>
-					<h4>Pick your palette</h4>
-				</div>
-			</div>
-			<button class="generate__btn"><i class="fas fa-sync"></i>generate</button>
-			<button class="save__btn"><i class="fas fa-save"></i>save</button>
-			<div class="save">
-				<div class="save__modal">
-					<button class="save__close"><i class="fas fa-times-circle"></i></button>
-					<h4>Give a name to your palette</h4>
-					<input type="text" max-length="35" class="save__name">
-					<button type="submit" class="save__submit">Save</button>
-				</div>
-			</div>
-		</nav>-->
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
     integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
