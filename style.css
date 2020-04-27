@@ -215,6 +215,7 @@ body {
   max-width: 350px;
 	padding: 2em 3em;
 	overflow-y: scroll;
+	top: 1em;
 }
 
 .panel__modal--info p {
