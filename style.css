@@ -182,8 +182,6 @@ body {
 }
 
 /* ADJUSTMENTS */
-.panel--adjustment {
-}
 
 .panel__modal--adjustment {
 	width: 80%;
@@ -213,7 +211,10 @@ body {
 /* INFO */
 
 .panel__modal--info {
-  max-width: 500px;
+  width: 80%;
+  max-width: 350px;
+	padding: 2em 3em;
+	overflow-y: scroll;
 }
 
 .panel__modal--info p {
